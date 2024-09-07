@@ -1,1 +1,4 @@
 .ipynb_checkpoints
+.pretzel
+__pycache__
+.DS_Store
