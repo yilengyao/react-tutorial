@@ -1,0 +1,11 @@
+// Flux/Redux Architecture
+digraph {
+	graph [label="Flux/Redux Architecture" rankdir=LR]
+	Action [label=Action shape=rect]
+	Dispatcher [label=Dispatcher shape=rect]
+	Store [label=Store shape=rect]
+	View [label=View shape=rect]
+	Action -> Dispatcher
+	Dispatcher -> Store
+	Store -> View
+}

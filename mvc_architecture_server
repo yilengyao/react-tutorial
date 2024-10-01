@@ -1,0 +1,19 @@
+// MVC Architecture
+digraph {
+	graph [label="MVC Architecture"]
+	rankdir=lr
+	subgraph cluster_mvc {
+		User [label=User shape=rect]
+		Controller [label=Controller shape=rect]
+		Model [label=Model shape=rect]
+		View [label=View shape=rect]
+		User -> Controller
+		Controller -> Model
+		Model -> View
+		View -> Model
+		Model -> Controller
+	}
+	Server [label=Server shape=rect]
+	Server -> Model
+	Server -> View
+}

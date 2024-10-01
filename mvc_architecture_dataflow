@@ -1,0 +1,13 @@
+// MVC Architecture
+digraph {
+	graph [label="MVC Architecture" rankdir=LR]
+	User [label=User shape=rect]
+	Controller [label=Controller shape=rect]
+	Model [label=Model shape=rect]
+	View [label=View shape=rect]
+	User -> Controller
+	Controller -> Model
+	Model -> View
+	View -> Model
+	Model -> Controller
+}
